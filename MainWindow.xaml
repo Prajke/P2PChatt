@@ -1,0 +1,36 @@
+﻿<Window x:Class="P2Pchatt.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P2Pchatt"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+
+        <Button x:Name="ConnectButton" IsEnabled="True" Content="Connect" HorizontalAlignment="Left" Margin="24,166,0,0" VerticalAlignment="Top" Width="56" Height="28" Click="ConnectButton_Click"/>
+        <Button x:Name="FindButton" IsEnabled="True" Content="Find user" HorizontalAlignment="Left" Margin="24,359,0,0" VerticalAlignment="Top" Width="68" Click="FindButton_Click" Height="28"/>
+        <TextBox x:Name="ListenPort" HorizontalAlignment="Left" Height="24" Margin="24,315,0,0" Padding="1" TextWrapping="Wrap" Text="1025" VerticalAlignment="Top" Width="36" />
+        <ListBox x:Name="ConvoBox" HorizontalAlignment="Left" Height="259" Margin="271,73,0,0" VerticalAlignment="Top" Width="494"/>
+        <TextBox x:Name="MessageLine" HorizontalAlignment="Left" Height="24" Margin="271,359,0,0" Padding="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="316"/>
+        <Button x:Name="SendButton" IsEnabled="False" Content="Send" HorizontalAlignment="Left" Margin="586,359,0,0" VerticalAlignment="Top" Width="76" Height="24" Click="SendButton_Click"/>
+        <TextBox x:Name="UsernameHost" HorizontalAlignment="Left" Height="24" Margin="24,264,0,0" Padding="1" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.479,0.604"/>
+        <TextBox x:Name="UsernameClient" HorizontalAlignment="Left" Height="24" Margin="24,73,0,0" Padding="1" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.479,0.604"/>
+        <Label x:Name="label" FontWeight="Bold" Content="Chat with a specific user" HorizontalAlignment="Left" Margin="24,26,0,0" VerticalAlignment="Top" Padding="0"/>
+        
+        <Label x:Name="label_Copy"  FontWeight="Bold" Content="Find a user to chat with" HorizontalAlignment="Left" Margin="24,217,0,0" VerticalAlignment="Top" Padding="0"/>
+        <Label x:Name="label_Copy1" Content="Your username:" HorizontalAlignment="Left" Margin="24,52,0,0" VerticalAlignment="Top" Padding="0"/>
+        <Label x:Name="label_Copy2" Content="IP &amp; Port of user:" HorizontalAlignment="Left" Margin="24,102,0,0" VerticalAlignment="Top" Padding="0"/>
+        <Label x:Name="label_Copy3" Content="Your username:" HorizontalAlignment="Left" Margin="24,243,0,0" VerticalAlignment="Top" Padding="0"/>
+        <Label x:Name="label_Copy4" Content="Port to use:" HorizontalAlignment="Left" Margin="24,294,0,0" VerticalAlignment="Top" Padding="0"/>
+        <TextBox x:Name="Port" HorizontalAlignment="Left" Height="24" Margin="108,123,0,0" Padding="1" TextWrapping="Wrap" Text="1025" VerticalAlignment="Top" Width="36" />
+        <TextBox x:Name="IP" HorizontalAlignment="Left" Height="24" Margin="24,123,0,0" Padding="1" TextWrapping="Wrap" Text="127.0.0.1" VerticalAlignment="Top" Width="68" />
+        <Button x:Name="DisconnectButton" IsEnabled="False" Content="Disconnect" HorizontalAlignment="Left" Margin="587,20,0,0" VerticalAlignment="Top" Width="68" Click="DisconnectButton_Click" Height="28"/>
+        <Button x:Name="HistoryButton"  Content="Chat History" HorizontalAlignment="Left" Margin="690,20,0,0" VerticalAlignment="Top" Width="77" Click="HistoryButton_Click" Height="28"/>
+        <Button x:Name="ImageButton" IsEnabled="False" Content="Image" HorizontalAlignment="Left" Margin="690,359,0,0" VerticalAlignment="Top" Width="75" Height="24" Click="ImageButton_Click"/>
+    </Grid>
+
+</Window>
+    
+
